@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./projects.css";
+import "./../../App.css";
 
 const Projects = () => {
   const [projects, setProjects] = useState(null);
@@ -22,19 +23,6 @@ const Projects = () => {
       const dataSorted = dataFiltered.sort((a, b) =>
         b.updated_at.localeCompare(a.updated_at),
       );
-      // const dataSortedTuples = []
-      // var curTuple = []
-
-      // for (let i = 0; i < dataSorted.length; i++) {
-      //   if (curTuple.length == 3) {
-      //     dataSortedTuples.push(curTuple)
-      //     curTuple = []
-      //   }
-      //   curTuple.push(dataSorted[i])
-      //   if (i == dataSorted.length - 1) {
-      //     dataSortedTuples.push(curTuple)
-      //   }
-      // }
 
       // set state when the data received
       setProjects(dataSorted);
@@ -43,7 +31,7 @@ const Projects = () => {
     dataFetch();
   }, []);
 
-  if (!projects) return <div>Loading...</div>;
+  if (!projects) return (<div className="obs__projects" > <div className="obs__projects-header blink">&#123;Loading...&#125;</div></div>);
 
   return (
     <div className="obs__projects">

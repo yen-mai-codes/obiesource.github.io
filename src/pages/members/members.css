@@ -6,6 +6,13 @@
   background-color: var(--color-foreground);
 }
 
+/* .obs__members-column {
+  min-width: 0;
+  padding: 1.8rem 1.8rem;
+  background-color: var(--color-foreground-2);
+  border-radius: 7px;
+} */
+
 .obs__members-heading {
   color: var(--color-txt);
   font-family: var(--font-text-1);
@@ -48,8 +55,6 @@
     padding: 2rem;
   }
 }
-
-/* END */
 
 .obs__members-columns {
   display: flex;

@@ -71,3 +71,13 @@ html,
 .section__margin {
   margin: 4rem 6rem;
 }
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

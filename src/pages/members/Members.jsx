@@ -30,7 +30,7 @@ const Members = () => {
         {/* <h2 className="obs__members-heading">&#123;Meet the team&#125;</h2> */}
         <div className="obs__members-description">
           <div className="obs__members-columns">
-            <div>
+            <div className="obs__members-column">
               <h2 className="obs__members-heading">Club Officers</h2>
               <ul className="diroff">
                 {members
@@ -40,7 +40,7 @@ const Members = () => {
                   ))}
               </ul>
             </div>
-            <div>
+            <div className="obs__members-column">
               <h2 className="obs__members-heading">Members</h2>
               <ul className="dirmem">
                 {members
@@ -53,7 +53,7 @@ const Members = () => {
                   ))}
               </ul>
             </div>
-            <div>
+            <div className="obs__members-column">
               <h2 className="obs__members-heading">Alumni</h2>
               <ul className="diralum">
                 {members

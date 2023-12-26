@@ -1,50 +1,96 @@
 .obs__resources-more {
   width: 100%;
-  padding: 3rem 6rem 0rem 6rem;
+  padding: 3rem 6rem;
   background-color: var(--color-foreground);
 }
 
-.obs__resources-more-heading {
-  color: var(--color-txt);
+.obs__resources-more-header {
   font-family: var(--font-text-1);
   font-size: 30px;
   font-weight: 500;
   text-align: center;
 }
 
-.obs__resources-more-description {
-  justify-content: center;
-  color: var(--color-txt);
-  font-family: var(--font-text-1);
-  font-size: 16px;
-  font-weight: 400;
-  margin: 1.5em 3rem 0rem 3rem;
-  padding-bottom: 3rem;
-  display: grid;
+.obs__resources-more-container {
+  display: flex;
 }
 
-.obs__resources-more-description h3 {
+.obs__resources-more-resource {
+  min-width: 0;
+  flex-basis: 32%;
+  display: inline-block;
+  padding: 1.8rem 1.8rem;
+  background-color: var(--color-foreground-2);
+  border-radius: 7px;
+  flex-grow: 1;
+}
+
+.obs__resources-more-resource-heading {
   font-family: var(--font-text-1);
+  overflow-wrap: break-word;
+  font-size: 20px;
   font-weight: 500;
-  font-size: 30px;
-  padding: 0 0 0.6rem 0;
-  color: var(--color-accent);
+  padding-bottom: 1rem;
+  text-wrap: wrap;
 }
 
-.obs__resources-more-description p {
-  font-family: var(--font-text-1);
+.obs__resources-more-resource-heading a {
+  text-decoration: none;
+}
+
+.obs__resources-more-flex__container {
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+  gap: 1rem;
+}
+
+.obs__resources-more-resource-heading-status {
+  color: var(--color-accent-alt);
+}
+
+.obs__resources-more-resource-heading-description-leader {
+  color: #606060;
+}
+
+.obs__resources-more-resource-heading-description {
+  font-family: var(--font-text-2);
   font-size: 16px;
-  color: var(--color-txt);
+  font-weight: 500;
+}
+
+.obs__resources-more-resource-heading-title {
+  color: #2f81f7;
+  font-weight: 700;
+}
+
+.obs__resource-image {
+  padding: 2rem 1.7rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .obs__navbar-links_container {
+    display: none;
+  }
+
+  .obs__navbar-menu {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 700px) {
+  .obs__resources-more-resource {
+    flex-basis: 100%;
+  }
   .obs__resources-more {
     padding: 2rem 4rem;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .obs__resources-more {
+  .obs__navbar {
     padding: 2rem;
   }
 }
