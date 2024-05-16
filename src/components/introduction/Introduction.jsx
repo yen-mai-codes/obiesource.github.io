@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import "./introduction.css";
 
-const Typewriter = ({
+export const Typewriter = ({
   text,
   showIf = true,
   sequenceBefore = [],
